@@ -1,0 +1,163 @@
+.two-column-container {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(cat3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 90vh;
+}
+
+.left-column,
+.right-column {
+    width: 45%;
+}
+
+.left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.left-column img {
+    width: 50%;
+    border: 2px solid #4c4c4c;
+    border-radius: 50%;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-column h1 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-size: 5em;
+    font-weight: bold;
+    color: #343434;
+    font-family: monospace;
+}
+
+.right-column h2 {
+    margin-bottom: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    color: #343434;
+    font-family: monospace;
+}
+
+.right-column p {
+    width: 64%;
+    font-size: 1.2em;
+    color: #343434;
+    font-family: monospace;
+}
+
+.custom-paragraph {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 500px;
+    color: #6a6a6a;
+    margin: 1.5rem 0rem;
+    text-align: center;
+    max-width: 80%;
+}
+
+.custom-heading {
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: #4c4c4c;
+    line-height: 5rem;
+    max-width: 600px;
+    text-align: center;
+    max-width: 90%;
+}
+
+@media screen and (max-height: 768px) {
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .left-column img {
+        width: 50%;
+        margin: 1rem 0;
+    }
+
+    .right-column h1 {
+        font-size: 3em;
+    }
+
+    .right-column h2 {
+        font-size: 2em;
+    }
+
+    .right-column p {
+        width: 70%;
+        font-size: 1em;
+    }
+
+    .custom-paragraph {
+        font-size: clamp(0.8rem, 2vw, 1.2rem);
+    }
+
+    .custom-heading {
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        line-height: 4rem;
+    }
+}
+
+
+/* Title */
+
+
+.home-page-welcome h1 {
+    font-size:30px;text-align:center; line-height:1.5em; padding-bottom:45px; font-family:"Playfair Display", serif; text-transform:uppercase;letter-spacing: 2px; color:#111;
+}
+
+
+.home-page-welcome h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 60%;
+    left:50%; margin-left:-30%;
+    height: 1px;
+    content: "";
+    background-color: #777; z-index: 4;
+}
+.home-page-welcome h1:after {
+    position:absolute;
+    width:40px; height:40px; left:50%; margin-left:-20px; bottom:0px;
+    content: '\00a7'; font-size:30px; line-height:40px; color:#c50000;
+    font-weight:400; z-index: 5;
+    display:block;
+    background-color:transparent;
+}
+
+
+h1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+h1 span {
+    display: block;
+    font-size: 0.5em;
+    line-height: 1.3;
+}
+h1 em {
+    font-style: normal;
+    font-weight: 600;
+}

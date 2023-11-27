@@ -1,0 +1,136 @@
+/* Size and alignment for the wrapper div */
+.edit-procedure-form-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+/* ==== RESIZABLE ==== */
+/* wide screen */
+/* big height => elements stick in middle */
+@media (min-height: 750px) {
+    .edit-procedure-component-resize-height {
+        height: calc(100vh - 80px);
+    }
+}
+/* small height => elements get scroll bar */
+@media (max-height: 750px) {
+    .edit-procedure-component-resize-height {
+        min-height: 100vh;
+    }
+}
+
+.p-edit-contered{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* ==== FORM TITLE ==== */
+.edit-procedure-form-title h1 {
+    position: relative;
+    padding: 0;
+    margin-top: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+}
+.edit-procedure-form-title h1 span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 300;
+    word-spacing: 3px;
+    line-height: 2em;
+    color: rgba(0, 0, 0, 0.5);
+}
+.edit-procedure-form-title h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+.edit-procedure-form-title h1:before {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 1px;
+    content: "";
+    left: 50%;
+    margin-left: -30px;
+    background-color: #777;
+}
+.edit-procedure-form-title {
+    margin-bottom: 20px;
+}
+
+
+/* ==== FORM ==== */
+/* Form card style */
+.edit-procedure-form-card {
+    opacity: 0.85;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-image: linear-gradient(#FAF0E1, #D9FBF9);
+}
+
+/* Form inputs */
+.edit-procedure-form-card input[type="text"],
+.edit-procedure-form-card select,
+.edit-procedure-form-card .edit-procedure-checkbox,
+.edit-procedure-form-card .edit-procedure-form-element{
+    color: #535752;
+    border: none;
+    border-bottom: 2px solid #368F8B;
+    background-color: #faf9f0;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* submit button spacing */
+.edit-procedure-form-group button{
+    margin: 1px;
+}
+/* Form groups */
+/* A div with the label, input field and error */
+.edit-procedure-form-card .edit-procedure-form-group {
+    margin-top: 2px;
+}
+/* Form labels */
+.edit-procedure-form-card .edit-procedure-form-group .edit-procedure-form-label {
+    color: #136864;
+    font-weight: bold;
+}
+.edit-procedure-form-label-simple {
+    color: #136864;
+}
+/* Error message takes space when is not shown */
+.hidden-error-message {
+    visibility: hidden;
+}
+/* Input placeholder */
+.edit-procedure-form-card .edit-procedure-form-group input::placeholder {
+    color: #d5dbe3;
+}
+/* Padding for in between the radio buttons */
+.edit-procedure-form-card .edit-procedure-padding-item {
+    padding: 5px;
+}
+/* Background edit procedure transparent */
+.edit-procedure-transparent {
+    background-color: transparent;
+}
+/* Margin left for yes no radio buttons */
+.edit-procedure-form-card .edit-procedure-margin-left {
+    margin-left: 30px;
+}

@@ -1,0 +1,88 @@
+.medic-card-container {
+	background-color: white;
+	min-width: 350px;
+	max-width: 600px;
+	height: auto;
+	border-radius: 14px;
+	box-shadow: 0px 10px 30px hsl(185, 75%, 35%);
+}
+
+.medic-label {
+    font-weight: bold;
+    color: black;
+  }
+  
+
+.medic-header {
+	/*background-image: url("../../public/images/bg-pattern-card.svg");*/
+	/*background-image: url("./background-colorful-1.png");*/
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	text-align: center;
+	border-top-left-radius: 14px;
+	border-top-right-radius: 14px;
+}
+
+.medic-header-background-1 {
+	background-image: url("background-colorful-1.png");
+}
+
+.medic-header-background-2 {
+	background-image: url("background-colorful-2.png");
+}
+
+.medic-header-background-3 {
+	background-image: url("background-colorful-3.png");
+}
+
+
+.medic-img {
+	margin: auto;
+	width: 200px;
+    height: 200px;
+	border: solid white 4px;
+	border-radius: 50%;
+	margin-top: 55px;
+    object-fit: cover;
+}
+
+.medic-bold-text {
+	font-weight: bold;
+	font-size: 0.9rem;
+	text-align: center;
+	padding: 10px 20px 0px 20px;
+}
+
+.medic-normal-text {
+	font-weight: normal;
+	font-size: 0.9rem;
+	color: hsl(0, 0%, 50%);
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+/* SOCIAL STATS */
+.medic-smaller-text {
+	font-weight: normal;
+	font-size: 0.8rem;
+	color: hsl(0, 0%, 50%);
+	text-align: center;
+	letter-spacing: 1px;
+	padding-bottom: 20px;
+	line-height: 5px;
+}
+
+.medic-social-container {
+	display: flex;
+	border-top: solid rgb(206, 206, 206) 1px;
+	text-align: center;
+}
+
+.medic-phone {
+	flex: 1;
+}
+
+.medic-email {
+	flex: 1;
+}

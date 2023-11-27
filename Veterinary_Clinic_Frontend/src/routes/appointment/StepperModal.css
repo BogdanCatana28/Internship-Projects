@@ -1,0 +1,100 @@
+.stepperModalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.8);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.stepperModalContainer {
+  width: 500px;
+  height: 900px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  font-size: 20px;
+}
+
+.stepperModalTitle {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.stepperModalTitleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.stepperModalTitleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.stepperModalBody {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.7rem;
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.stepperModalBody select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.stepperModalFooter {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stepperModalFooter button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: rgb(63, 189, 99);
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+#cancelBtn {
+  background-color: crimson;
+  font-family: "Nunito", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .stepperModalContainer {
+    max-width: 90%;
+    max-height: 80vh;
+    padding-top: 40px;
+  }
+}
+
+@media (max-height: 768px) {
+  .stepperModalContainer {
+    max-width: 90%;
+    max-height: 80vh;
+    padding-top: 40px;
+  }
+}

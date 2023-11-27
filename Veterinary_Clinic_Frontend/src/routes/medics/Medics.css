@@ -1,0 +1,37 @@
+.medics-container {
+  background-image: url("background-medics.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Adjusted minimum height for smaller screens */
+  padding: 20px 0;
+}
+
+.medics-container-admin {
+  background-image: url('../admin/dashboard/Background_turquiose_2.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Adjusted minimum height for smaller screens */
+  padding: 20px 0;
+}
+
+.medic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px; /* Adjusted gap for smaller screens */
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 20px; /* Added margin to keep the grid inside the container */
+}
+
+@media (max-width: 768px) {
+  .medic-grid {
+    grid-template-columns: 1fr; /* Display one card per row on smaller screens */
+  }
+}

@@ -1,0 +1,121 @@
+.view-procedure-resize {
+  min-height: 100vh;
+}
+
+.container-procedures {
+    padding: 20px;
+  }
+  
+
+  .table-procedures {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+
+/* ==== TABLE TITLE ==== */
+.container-procedures h1 {
+  position: relative;
+  padding: 0;
+  margin-top: 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #080808;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  text-align: center;
+}
+.container-procedures h1 span {
+  display: block;
+  font-size: 0.5em;
+  font-weight: 300;
+  word-spacing: 3px;
+  line-height: 2em;
+  color: rgba(0, 0, 0, 0.5);
+}
+.container-procedures h1 em {
+  font-style: normal;
+  font-weight: 600;
+}
+.container-procedures h1:before {
+  position: absolute;
+  bottom: 0;
+  width: 60px;
+  height: 1px;
+  content: "";
+  left: 50%;
+  margin-left: -30px;
+  background-color: #777;
+}
+.container-procedures {
+  margin-bottom: 20px;
+}
+
+
+  
+  .btn-edit-procedure {
+    background-color: #28a745;
+    color: #fff;
+  }
+
+  .table-procedures {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+
+  .table-procedures th {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+  }
+
+  .table-procedures tbody tr {
+    border-bottom: 1px solid #dee2e6;
+    text-align: center;
+  }
+  
+
+  .table-procedures td {
+    padding: 8px;
+    vertical-align: middle;
+  }
+  
+  
+
+  @media (max-width: 768px) {
+    .container-procedures {
+      padding: 10px;
+    }
+  
+    .procedures {
+      text-align: center;
+    }
+  
+    .form-control-procedure {
+      width: 100%;
+    }
+    .radio-container {
+      justify-content: center;
+    }
+  }
+a{
+  text-decoration: none;
+}
+
+ul{
+  text-decoration: none;
+}
+
+.table-procedures td,
+.table-procedures th {
+    border: 1px solid #24615E;
+}
+
+.edit-btn-procedure {
+    background-color: #C9F1D2;
+}

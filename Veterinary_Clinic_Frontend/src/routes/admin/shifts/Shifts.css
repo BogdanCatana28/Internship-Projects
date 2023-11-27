@@ -1,0 +1,23 @@
+.shifts-page {
+    width:auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+
+.shifts-confirmation-layout{
+    background: #ffffe0;
+}
+
+.shifts-confirmation-layout .shifts-confirmation-button{
+    background: #74a872;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+.shifts-confirmation-layout .shifts-confirmation-button:hover{
+    background: #3e733c;
+}

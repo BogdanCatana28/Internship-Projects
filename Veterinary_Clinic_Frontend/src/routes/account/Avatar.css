@@ -1,0 +1,21 @@
+.avatar-container {
+    text-align: center;
+  }
+  
+  .avatar {
+    display: inline-block;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: #dfdfdf;
+  }
+  
+  .avatar img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

@@ -1,0 +1,11 @@
+export const API_URL = "http://localhost:8080/";
+export const ACCOUNT_LOGIN_URL = API_URL + 'api/auth/sign-in';
+export const USER_URL = API_URL + 'users';
+export const ADD_PATIENT_URL = API_URL + 'patients';
+export const ADD_CONSULTATION_URL = API_URL + 'consultations';
+export const GET_CUSTOMERS_URL = API_URL + 'users';
+export const GET_PATIENT_TYPES_URL = API_URL + 'patient-types';
+export const GET_PATIENT_SEXES_URL = API_URL + 'patient-sexes';
+export const GET_PATIENT_BY_ID_URL = API_URL + 'patients' + "/1";
+export const ACCOUNT_REGISTER_URL = API_URL + 'api/auth/signup';
+export const GOOGLE_MAPS_API_KEY = `AIzaSyCTEdlcQDya9TwPgd1IkPR-seOBqhg4hfg`;

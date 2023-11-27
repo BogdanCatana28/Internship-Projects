@@ -1,0 +1,105 @@
+.medic-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.photo {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.details {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.card-header {
+  border-radius: 10px 10px 0 0;
+}
+
+.btn-primary {
+  background-color: #00b327;
+  border-color: #00b327;
+}
+
+.btn-primary:hover {
+  background-color: #00b327;
+  border-color: #00b327;
+}
+.btn-primary-add-medic{
+  background-color: #F3DFC1;
+  border-color: #F3DFC1;
+}
+.btn-primary-add-medic:hover {
+  background-color: #F3DFC1;
+  border-color: #F3DFC1;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-body-consult {
+  display: flex;
+  align-items:start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label {
+  justify-content: center;
+}
+
+.medic-add-button-container {
+  display: flex;
+  
+  text-align: center;
+}
+/* .clickable-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.medic-add-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  min-width: 350px;
+  max-width: 600px;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0px 10px 30px hsl(185, 75%, 35%);
+}
+.medic-add-img {
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border: solid white 4px;
+  border-radius: 50%;
+  margin-top: 28px;
+  margin-bottom: 27px;
+  object-fit: cover;
+}
+.medic-header-admin {
+  background: linear-gradient(to bottom, #7db4c4 50%, #FFFFFF 50%);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}

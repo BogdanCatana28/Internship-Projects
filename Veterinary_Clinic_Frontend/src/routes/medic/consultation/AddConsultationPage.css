@@ -1,0 +1,192 @@
+/* whole page */
+.add-consultation-form-wrapper{
+    display: flex;
+    justify-content: center;
+}
+/* ==== RESIZABLE ==== */
+/* skinny screen */
+@media (max-width: 1110px) {
+    .consultation-form-resize {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* big height => elements stick in middle */
+    @media (min-height: 2530px) {
+        .consultation-form {
+            height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    /* small height => elements get scroll bar */
+    @media (max-height: 2530px) {
+        .consultation-form {
+            min-height: 100vh;
+        }
+    }
+}
+/* wide screen */
+@media (min-width: 1110px) {
+    .consultation-form-resize {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* big height => elements stick in middle */
+    @media (min-height: 1300px) {
+        .consultation-form {
+            height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    /* small height => elements get scroll bar */
+    @media (max-height: 1300px) {
+        .consultation-form {
+            min-height: 100vh;
+        }
+    }
+}
+
+
+/* ==== FORM TITLE ==== */
+.consulation-form-title h1 {
+    position: relative;
+    padding: 0;
+    margin-top: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #080808;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+}
+.consulation-form-title h1 span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: 300;
+    word-spacing: 3px;
+    line-height: 2em;
+    color: rgba(0, 0, 0, 0.5);
+}
+.consulation-form-title h1 em {
+    font-style: normal;
+    font-weight: 600;
+}
+.consulation-form-title h1:before {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 1px;
+    content: "";
+    left: 50%;
+    margin-left: -30px;
+    background-color: #777;
+}
+.consulation-form-title {
+    margin-bottom: 20px;
+}
+
+
+/* ==== FORM SUBTITLE ==== */
+.consulation-form-subtitle {
+    margin-bottom: 15px;
+}
+
+
+/* ==== FORM ==== */
+/* Form card style */
+.consulation-form-card {
+    background-image: linear-gradient(#FDFBEF, #daf5e1);
+    opacity: 0.85;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px;
+}
+/* Form inputs */
+.consulation-form-card input[type="text"],
+.consulation-form-card input[type="email"],
+.consulation-form-card input[type="password"],
+.consulation-form-card select,
+.consulation-form-card input[type="date"],
+.consulation-form-card textarea,
+.consulation-form-card button,
+.consulation-form-card .consulation-form-element{
+    color: #535752;
+    border: none;
+    border-bottom: 2px solid #1e661c;
+    background-color: #faf9f0;
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/* Disabled inputs */
+.consulation-form-card input:disabled,
+.consulation-form-card select:disabled {
+    background-color: #f1eeee;
+}
+/* Options in select */
+.consulation-form-card .consulation-form-option {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/* Submit button */
+.consulation-form-submit-button {
+    background: #74a872;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.consulation-form-submit-button:hover {
+    background: #3e733c;
+}
+/* Form groups */
+/* A div with the label, input field and error */
+.consulation-form-card .consulation-form-group {
+    margin-top: 2px;
+}
+/* Form labels */
+.consulation-form-card .consulation-form-label {
+    color: #30592e;
+}
+/* Selected option */
+.consulation-form-card option::selection,
+.consulation-form-card option:checked{
+    background-color: #74a872;
+}
+/* Error message design */
+.consulation-form-card .input-error-message {
+    color: red;
+    margin-top: 5px;
+    font-size: 12px;
+}
+/* Error message takes space when is not shown */
+.hidden-error-message {
+    visibility: hidden;
+}
+/* Error input field design */
+.consulation-form-card .consulation-form-group .red-error-message {
+    border: none;
+    border-bottom: 2px solid red;
+}
+/* Input placeholder */
+.consulation-form-card .consulation-form-group input::placeholder,
+.consulation-form-card .consulation-form-group textarea::placeholder {
+    color: red;
+}

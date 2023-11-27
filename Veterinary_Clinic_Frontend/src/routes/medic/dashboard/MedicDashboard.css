@@ -1,0 +1,21 @@
+.medic-dashboard {
+    display: flex;
+}
+
+.medic-sidebar {
+    background: rgba(245, 225, 147, 0.4);
+}
+
+.medic-sidebar-header {
+    margin-top: 10px;
+}
+
+.medic-component {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    width: 100%;
+    background-image: url("background_teporary.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
